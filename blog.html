@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aurelia Vale's blog — thoughts on writing, motherhood, wellness, and faith.">
+<meta name="keywords" content="postpartum recovery, new mother advice, literary fiction writing prompts, understanding Islam, wellness after birth, writing tips, literary fiction">
+<meta name="author" content="Aurelia Vale">
+<meta name="robots" content="index, follow">
+<title>From the Desk of Aurelia Vale | Blog</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#C9A84C;--dark:#1a1a2e;--text:#f0ead6;--muted:#a89880;--card:rgba(255,255,255,0.05);--border:rgba(255,255,255,0.1);--accent:#8b7355}
+body{background:var(--dark);color:var(--text);font-family:'Georgia',serif;min-height:100vh;padding:2rem 1.5rem}
+header{text-align:center;padding:2rem 0 1.5rem;border-bottom:0.5px solid var(--border);margin-bottom:2rem}
+.back{font-size:0.75rem;color:var(--gold);text-decoration:none;letter-spacing:0.1em;font-family:sans-serif;display:block;margin-bottom:1rem}
+header h1{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:400;margin-bottom:0.35rem}
+header p{font-size:0.85rem;color:var(--muted);font-style:italic}
+.gold-line{width:40px;height:1px;background:var(--gold);margin:1rem auto}
+
+.post-area{max-width:680px;margin:0 auto}
+.post-card{background:var(--card);border:0.5px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.25rem;cursor:pointer;transition:border-color 0.2s}
+.post-card:hover{border-color:rgba(201,168,76,0.4)}
+.post-meta{font-size:0.7rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;font-family:sans-serif;margin-bottom:0.5rem}
+.post-title{font-size:1.05rem;color:var(--text);margin-bottom:0.4rem;line-height:1.4}
+.post-excerpt{font-size:0.82rem;color:var(--muted);line-height:1.7}
+.post-tag{display:inline-block;font-size:0.65rem;padding:0.2rem 0.5rem;border-radius:4px;background:rgba(201,168,76,0.1);color:var(--gold);font-family:sans-serif;letter-spacing:0.05em;margin-top:0.625rem}
+
+.full-post{background:var(--card);border:0.5px solid var(--border);border-radius:12px;padding:2rem;margin-bottom:1.5rem;display:none}
+.full-post.visible{display:block}
+.full-post h2{font-size:1.4rem;font-weight:400;margin-bottom:0.5rem;line-height:1.35}
+.full-post .meta{font-size:0.7rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;font-family:sans-serif;margin-bottom:1.25rem}
+.full-post .body{font-size:0.9rem;line-height:1.9;color:var(--muted)}
+.full-post .body p{margin-bottom:1rem}
+.full-post .cta{margin-top:1.5rem;padding-top:1.25rem;border-top:0.5px solid var(--border)}
+.full-post .cta p{font-size:0.82rem;color:var(--muted);margin-bottom:0.75rem}
+.cta-btn{display:inline-block;background:var(--gold);color:#1a1a2e;padding:0.5rem 1.1rem;border-radius:6px;font-size:0.8rem;font-weight:700;font-family:sans-serif;text-decoration:none;transition:opacity 0.2s}
+.cta-btn:hover{opacity:0.85}
+.back-btn{display:inline-block;font-size:0.78rem;color:var(--muted);cursor:pointer;margin-bottom:1.25rem;font-family:sans-serif;border:none;background:none;padding:0}
+.back-btn:hover{color:var(--gold)}
+
+.loading{text-align:center;padding:3rem 0}
+.loading p{font-size:0.85rem;color:var(--muted);font-style:italic;margin-bottom:1rem}
+.typing-wrap{display:flex;gap:6px;align-items:center;justify-content:center}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 1.2s infinite}
+.dot:nth-child(2){animation-delay:0.2s}.dot:nth-child(3){animation-delay:0.4s}
+@keyframes pulse{0%,60%,100%{opacity:0.3}30%{opacity:1}}
+
+footer{text-align:center;padding:2rem 0 0;border-top:0.5px solid var(--border);margin-top:2rem;font-size:0.72rem;color:var(--muted);font-family:sans-serif}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="https://aureliavale.github.io">← Back to Aurelia Vale</a>
+  <h1>From the Desk of Aurelia Vale</h1>
+  <p>Thoughts on writing, motherhood, wellness, and faith</p>
+  <div class="gold-line"></div>
+</header>
+
+<div class="post-area">
+  <div id="full-post-view" class="full-post">
+    <button class="back-btn" onclick="closePost()">← Back to all posts</button>
+    <div class="meta" id="fp-meta"></div>
+    <h2 id="fp-title"></h2>
+    <div class="body" id="fp-body"></div>
+    <div class="cta" id="fp-cta"></div>
+  </div>
+  <div id="posts-view">
+    <div id="loading" class="loading" style="display:none">
+      <p>A new letter is being written…</p>
+      <div class="typing-wrap"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    </div>
+    <div id="posts-list"></div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Aurelia Vale · <a href="https://aureliavale.github.io">aureliavale.github.io</a> · <a href="mailto:aureliavale.collections@gmail.com">aureliavale.collections@gmail.com</a>
+</footer>
+
+<script>
+const TOPICS=[
+  {theme:'postpartum',keyword:'what to expect in the first 40 days after birth',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
+  {theme:'writing',keyword:'writing prompts for literary fiction writers',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
+  {theme:'faith',keyword:'what is Islam a gentle introduction for non-Muslims',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
+  {theme:'new mother',keyword:'how to recover after having a baby naturally',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
+  {theme:'writing craft',keyword:'how to write deep characters in literary fiction',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
+  {theme:'postpartum emotions',keyword:'postpartum emotional recovery feeling overwhelmed new mother',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
+  {theme:'Islam basics',keyword:'basic beliefs of Islam explained simply',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
+  {theme:'fiction writing',keyword:'how to write a story that means something literary fiction tips',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
+  {theme:'newborn care',keyword:'newborn care tips first weeks at home new parents',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
+  {theme:'Muslim life',keyword:'common questions non-Muslims have about Islam answered',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
+  {theme:'breastfeeding',keyword:'breastfeeding tips for new mothers first weeks',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
+  {theme:'story writing',keyword:'how to write a short story with moral depth',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
+  {theme:'Quran',keyword:'what does the Quran say about kindness and mercy',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
+  {theme:'postpartum sleep',keyword:'how to survive sleep deprivation as a new mother',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
+  {theme:'writing voice',keyword:'how to find your voice as a fiction writer',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
+];
+
+const SYS=`You are writing a thoughtful, literary blog post for "From the Desk of Aurelia Vale" — a quiet blog by an independent author. Aurelia Vale is a retired Algerian English teacher with 30 years of experience, now an author and grandmother. She writes with depth, warmth, and honesty. She is never promotional.
+
+RULES:
+- Write a complete blog post of 280-350 words
+- Tone: warm, literary, honest, thoughtful — like a wise friend writing a letter
+- NO self-promotion, NO "I wrote a book", NO salesy language
+- The post should stand alone as genuinely useful or moving content
+- At the very end, ONE quiet sentence naturally mentioning the book — as a recommendation from a friend, never an ad
+- Verify every fact before including it. No invented statistics. No unverified claims.
+- For Islamic content: only what is well-established. No weak hadith.
+- For wellness: no medical claims. Gentle, human observations only.
+- Return ONLY valid JSON: {"title":"...","body":"paragraph1\\n\\nparagraph2\\n\\nparagraph3\\n\\nparagraph4","cta":"one quiet closing sentence mentioning the book naturally"}
+- No markdown in body. Use \\n\\n between paragraphs only.
+- No preamble, no explanation, just the JSON.`;
+
+let posts=JSON.parse(localStorage.getItem('av_posts')||'[]');
+let topicIndex=parseInt(localStorage.getItem('av_topic')||'0');
+
+function today(){return new Date().toISOString().split('T')[0]}
+
+function renderPosts(){
+  const list=document.getElementById('posts-list');
+  if(posts.length===0){list.innerHTML='';return;}
+  list.innerHTML=posts.map((p,i)=>`
+    <div class="post-card" onclick="openPost(${i})">
+      <div class="post-meta">${p.date}</div>
+      <div class="post-title">${p.title}</div>
+      <div class="post-excerpt">${p.excerpt}</div>
+      <span class="post-tag">${p.tag}</span>
+    </div>`).join('');
+}
+
+function openPost(i){
+  const p=posts[i];
+  document.getElementById('fp-meta').textContent=p.date+' · '+p.tag;
+  document.getElementById('fp-title').textContent=p.title;
+  document.getElementById('fp-body').innerHTML=p.body.split('\n\n').map(para=>`<p>${para}</p>`).join('');
+  document.getElementById('fp-cta').innerHTML=`<p>${p.cta}</p><a class="cta-btn" href="${p.url}" target="_blank">Get the book →</a>`;
+  document.getElementById('full-post-view').classList.add('visible');
+  document.getElementById('posts-view').style.display='none';
+  window.scrollTo(0,0);
+}
+
+function closePost(){
+  document.getElementById('full-post-view').classList.remove('visible');
+  document.getElementById('posts-view').style.display='block';
+}
+
+async function generatePost(){
+  document.getElementById('loading').style.display='block';
+  const topic=TOPICS[topicIndex%TOPICS.length];
+  topicIndex++;
+  localStorage.setItem('av_topic',topicIndex);
+  const prompt=`Write a blog post about: "${topic.keyword}" (theme: ${topic.theme}). The related book to mention naturally at the end is: "${topic.book}".`;
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,system:SYS,messages:[{role:'user',content:prompt}]})
+    });
+    const data=await res.json();
+    const raw=data.content?.[0]?.text||'';
+    const clean=raw.replace(/```json|```/g,'').trim();
+    const parsed=JSON.parse(clean);
+    const now=new Date();
+    const dateStr=now.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+    const excerpt=parsed.body.split('\n\n')[0].substring(0,140)+'…';
+    const post={title:parsed.title,body:parsed.body,cta:parsed.cta,excerpt,date:dateStr,tag:topic.tag,url:topic.url,day:today()};
+    posts.unshift(post);
+    localStorage.setItem('av_posts',JSON.stringify(posts.slice(0,30)));
+  }catch(e){
+    console.error(e);
+    localStorage.setItem('av_topic', topicIndex-1);
+  }
+  finally{document.getElementById('loading').style.display='none';}
+  renderPosts();
+}
+
+async function init(){
+  const lastDay=posts.length>0?posts[0].day:'';
+  if(lastDay!==today()){
+    await generatePost();
+  }
+  renderPosts();
+}
+
+init();
+</script>
+</body>
+</html>
