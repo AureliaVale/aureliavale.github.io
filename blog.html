@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Aurelia Vale's blog — thoughts on writing, motherhood, wellness, and faith.">
-<meta name="keywords" content="postpartum recovery, new mother advice, literary fiction writing prompts, understanding Islam, wellness after birth, writing tips, literary fiction">
+<meta name="keywords" content="postpartum recovery, new mother advice, literary fiction writing prompts, understanding Islam, wellness after birth, writing tips, what does Islam mean, literary fiction">
 <meta name="author" content="Aurelia Vale">
 <meta name="robots" content="index, follow">
 <title>From the Desk of Aurelia Vale | Blog</title>
@@ -19,6 +19,13 @@ header p{font-size:0.85rem;color:var(--muted);font-style:italic}
 .gold-line{width:40px;height:1px;background:var(--gold);margin:1rem auto}
 
 .post-area{max-width:680px;margin:0 auto}
+
+.featured-card{background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.3);border-radius:12px;padding:1.75rem;margin-bottom:1.5rem;cursor:pointer;transition:border-color 0.2s}
+.featured-card:hover{border-color:rgba(201,168,76,0.6)}
+.featured-label{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;font-family:sans-serif;margin-bottom:0.5rem}
+.featured-title{font-size:1.15rem;color:var(--text);margin-bottom:0.5rem;line-height:1.4}
+.featured-excerpt{font-size:0.85rem;color:var(--muted);line-height:1.75}
+
 .post-card{background:var(--card);border:0.5px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.25rem;cursor:pointer;transition:border-color 0.2s}
 .post-card:hover{border-color:rgba(201,168,76,0.4)}
 .post-meta{font-size:0.7rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;font-family:sans-serif;margin-bottom:0.5rem}
@@ -32,6 +39,9 @@ header p{font-size:0.85rem;color:var(--muted);font-style:italic}
 .full-post .meta{font-size:0.7rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;font-family:sans-serif;margin-bottom:1.25rem}
 .full-post .body{font-size:0.9rem;line-height:1.9;color:var(--muted)}
 .full-post .body p{margin-bottom:1rem}
+.full-post .body em{color:var(--text);font-style:italic}
+.full-post .body strong{color:var(--text)}
+.full-post .body hr{border:none;border-top:0.5px solid var(--border);margin:1.5rem 0}
 .full-post .cta{margin-top:1.5rem;padding-top:1.25rem;border-top:0.5px solid var(--border)}
 .full-post .cta p{font-size:0.82rem;color:var(--muted);margin-bottom:0.75rem}
 .cta-btn{display:inline-block;background:var(--gold);color:#1a1a2e;padding:0.5rem 1.1rem;border-radius:6px;font-size:0.8rem;font-weight:700;font-family:sans-serif;text-decoration:none;transition:opacity 0.2s}
@@ -53,13 +63,14 @@ footer a{color:var(--gold);text-decoration:none}
 <body>
 
 <header>
-  <a class="back" href="https://aureliavale.github.io">← Back to Aurelia Vale</a>
+  <a class="back" href="https://aureliavale.github.io/">← Back to Aurelia Vale</a>
   <h1>From the Desk of Aurelia Vale</h1>
   <p>Thoughts on writing, motherhood, wellness, and faith</p>
   <div class="gold-line"></div>
 </header>
 
 <div class="post-area">
+
   <div id="full-post-view" class="full-post">
     <button class="back-btn" onclick="closePost()">← Back to all posts</button>
     <div class="meta" id="fp-meta"></div>
@@ -67,34 +78,47 @@ footer a{color:var(--gold);text-decoration:none}
     <div class="body" id="fp-body"></div>
     <div class="cta" id="fp-cta"></div>
   </div>
+
   <div id="posts-view">
+    <!-- Featured post -->
+    <div class="featured-card" onclick="openFeatured()">
+      <div class="featured-label">✦ Featured</div>
+      <div class="featured-title">What Does Islam Actually Mean?</div>
+      <div class="featured-excerpt">There is a question I have carried since I was a teenager. Not a question anyone asked me. One I asked myself, quietly, in the years I was learning English — the language that would shape my entire life...</div>
+    </div>
+
     <div id="loading" class="loading" style="display:none">
       <p>A new letter is being written…</p>
       <div class="typing-wrap"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
     </div>
     <div id="posts-list"></div>
   </div>
+
 </div>
 
 <footer>
-  © 2026 Aurelia Vale · <a href="https://aureliavale.github.io">aureliavale.github.io</a> · <a href="mailto:aureliavale.collections@gmail.com">aureliavale.collections@gmail.com</a>
+  © 2026 Aurelia Vale · <a href="https://aureliavale.github.io/">aureliavale.github.io</a> · <a href="mailto:aureliavale.collections@gmail.com">aureliavale.collections@gmail.com</a>
 </footer>
 
 <script>
+const FEATURED = {
+  title: "What Does Islam Actually Mean?",
+  meta: "June 2026 · On Faith",
+  body: `There is a question I have carried since I was a teenager.\n\nNot a question anyone asked me. One I asked myself, quietly, in the years I was learning English — the language that would shape my entire life as a teacher, and now, much later, as a writer.\n\nThe question was this: if I am ever asked, one day, why I did not share what I know — what will I say?\n\n---\n\nI am a Muslim. I have lived inside this faith for as long as I can remember. I have known its warmth, its logic, its mercy, its demands, and its extraordinary gentleness toward the human heart.\n\nAnd I speak English — the first international language, the bridge between more people on this earth than any other tongue.\n\nFor decades, I felt a quiet ache. Not guilt for something done wrong. The ache of something left undone. The feeling of knowing you carry something valuable, and that others have the right to receive it.\n\nEvery time I saw Islam misrepresented — called a religion of violence, associated with cruelty it does not preach — I felt that ache deepen. Not anger. Sadness. Because I knew. And I had the words.\n\nSo let me offer them now.\n\n---\n\n**Let us begin with a word.**\n\nNot a doctrine. Not a rule. Not a history. Just a word — because the word itself contains everything.\n\nIslam.\n\nMany people have heard it thousands of times without knowing what it actually means. It is not the name of a founder, the way Christianity carries the name of Christ. It is not the name of a people or a place.\n\nIslam is an Arabic word. It comes from the root s-l-m — the same root that gives us salaam, the greeting of peace that Muslims exchange every day, all over the world.\n\nIslam means, at its heart, peace. More precisely, it means the peace that comes from surrender — from releasing the struggle against what is greater than yourself, and finding rest in that release.\n\nA Muslim is simply one who has made that surrender. One who has chosen to live in conscious awareness of God, to align their life with His guidance, and to find in that alignment a deep and lasting peace.\n\nThis is not the image most people have been given.\n\nThe word Islam has appeared for decades alongside images of conflict, anger, and fear. And so for many, the word itself has come to carry those associations — not because they are true, but because repetition is powerful, and because few have ever sat quietly with someone who could say: let me tell you what it actually means.\n\nSo here we are. Sitting quietly together.\n\nIslam means peace. It means surrender to God. It means the choice — made freshly, every single day — to live with intention, with mercy, and with awareness that this life is not the end of the story.\n\nThat is where it begins.\n\nAnd already, perhaps, it is not what you expected.`,
+  cta: "This post is drawn from Beneath the Same Sky — a quiet, honest introduction to Islam for anyone who has ever wondered.",
+  url: "https://books2read.com/u/mZzxAy"
+};
+
 const TOPICS=[
   {theme:'postpartum',keyword:'what to expect in the first 40 days after birth',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
   {theme:'writing',keyword:'writing prompts for literary fiction writers',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
-  {theme:'faith',keyword:'what is Islam a gentle introduction for non-Muslims',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
   {theme:'new mother',keyword:'how to recover after having a baby naturally',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
   {theme:'writing craft',keyword:'how to write deep characters in literary fiction',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
   {theme:'postpartum emotions',keyword:'postpartum emotional recovery feeling overwhelmed new mother',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
-  {theme:'Islam basics',keyword:'basic beliefs of Islam explained simply',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
   {theme:'fiction writing',keyword:'how to write a story that means something literary fiction tips',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
   {theme:'newborn care',keyword:'newborn care tips first weeks at home new parents',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
-  {theme:'Muslim life',keyword:'common questions non-Muslims have about Islam answered',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
   {theme:'breastfeeding',keyword:'breastfeeding tips for new mothers first weeks',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
   {theme:'story writing',keyword:'how to write a short story with moral depth',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
-  {theme:'Quran',keyword:'what does the Quran say about kindness and mercy',book:'Beneath the Same Sky',url:'https://books2read.com/u/mZzxAy',tag:'On Faith'},
   {theme:'postpartum sleep',keyword:'how to survive sleep deprivation as a new mother',book:'The First 40 Days',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15',tag:'For New Mothers'},
   {theme:'writing voice',keyword:'how to find your voice as a fiction writer',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
 ];
@@ -108,7 +132,6 @@ RULES:
 - The post should stand alone as genuinely useful or moving content
 - At the very end, ONE quiet sentence naturally mentioning the book — as a recommendation from a friend, never an ad
 - Verify every fact before including it. No invented statistics. No unverified claims.
-- For Islamic content: only what is well-established. No weak hadith.
 - For wellness: no medical claims. Gentle, human observations only.
 - Return ONLY valid JSON: {"title":"...","body":"paragraph1\\n\\nparagraph2\\n\\nparagraph3\\n\\nparagraph4","cta":"one quiet closing sentence mentioning the book naturally"}
 - No markdown in body. Use \\n\\n between paragraphs only.
@@ -129,6 +152,20 @@ function renderPosts(){
       <div class="post-excerpt">${p.excerpt}</div>
       <span class="post-tag">${p.tag}</span>
     </div>`).join('');
+}
+
+function openFeatured(){
+  document.getElementById('fp-meta').textContent = FEATURED.meta;
+  document.getElementById('fp-title').textContent = FEATURED.title;
+  document.getElementById('fp-body').innerHTML = FEATURED.body.split('\n\n').map(para=>{
+    if(para==='---') return '<hr>';
+    if(para.startsWith('**')) return `<p><strong>${para.replace(/\*\*/g,'')}</strong></p>`;
+    return `<p>${para}</p>`;
+  }).join('');
+  document.getElementById('fp-cta').innerHTML=`<p>${FEATURED.cta}</p><a class="cta-btn" href="${FEATURED.url}" target="_blank">Get the book →</a>`;
+  document.getElementById('full-post-view').classList.add('visible');
+  document.getElementById('posts-view').style.display='none';
+  window.scrollTo(0,0);
 }
 
 function openPost(i){
@@ -171,9 +208,11 @@ async function generatePost(){
     localStorage.setItem('av_posts',JSON.stringify(posts.slice(0,30)));
   }catch(e){
     console.error(e);
-    localStorage.setItem('av_topic', topicIndex-1);
+    topicIndex--;
+    localStorage.setItem('av_topic',topicIndex);
+  }finally{
+    document.getElementById('loading').style.display='none';
   }
-  finally{document.getElementById('loading').style.display='none';}
   renderPosts();
 }
 
