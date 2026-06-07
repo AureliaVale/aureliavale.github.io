@@ -123,22 +123,19 @@ const TOPICS=[
   {theme:'writing voice',keyword:'how to find your voice as a fiction writer',book:'The Deeper Story',url:'https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686',tag:'For Writers'},
 ];
 
-const SYS=`You are writing a thoughtful, literary blog post for "From the Desk of Aurelia Vale" — a quiet blog by an independent author. Aurelia Vale is a retired Algerian English teacher with 30 years of experience, now an author and grandmother. She writes with depth, warmth, and honesty. She is never promotional.
+const SYS=`You write short literary blog posts for "From the Desk of Aurelia Vale". Warm, honest, never promotional. 200-250 words maximum.
 
 RULES:
-- Write a complete blog post of 280-350 words
-- Tone: warm, literary, honest, thoughtful — like a wise friend writing a letter
-- NO self-promotion, NO "I wrote a book", NO salesy language
-- The post should stand alone as genuinely useful or moving content
-- At the very end, ONE quiet sentence naturally mentioning the book — as a recommendation from a friend, never an ad
-- Verify every fact before including it. No invented statistics. No unverified claims.
-- For wellness: no medical claims. Gentle, human observations only.
-- Return ONLY valid JSON: {"title":"...","body":"paragraph1\\n\\nparagraph2\\n\\nparagraph3\\n\\nparagraph4","cta":"one quiet closing sentence mentioning the book naturally"}
-- No markdown in body. Use \\n\\n between paragraphs only.
-- No preamble, no explanation, just the JSON.`;
+- Tone: warm, wise, like a letter from a friend
+- No medical claims. No unverified facts. No invented statistics.
+- End with ONE quiet sentence mentioning the book naturally
+- Return ONLY valid JSON, nothing else: {"title":"...","body":"para1\\n\\npara2\\n\\npara3","cta":"one closing sentence"}
+- No markdown in body. Paragraphs separated by \\n\\n only.`;
 
-let posts=JSON.parse(localStorage.getItem('av_posts')||'[]');
-let topicIndex=parseInt(localStorage.getItem('av_topic')||'0');
+let posts=[];
+let topicIndex=0;
+localStorage.removeItem('av_posts');
+localStorage.removeItem('av_topic');
 
 function today(){return new Date().toISOString().split('T')[0]}
 
@@ -194,11 +191,15 @@ async function generatePost(){
     const res=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,system:SYS,messages:[{role:'user',content:prompt}]})
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:3000,system:SYS,messages:[{role:'user',content:prompt}]})
     });
     const data=await res.json();
     const raw=data.content?.[0]?.text||'';
-    const clean=raw.replace(/```json|```/g,'').trim();
+    alert('API response: '+raw.substring(0,200));
+    const start=raw.indexOf('{');
+    const end=raw.lastIndexOf('}');
+    if(start===-1||end===-1) throw new Error('No JSON found');
+    const clean=raw.substring(start,end+1);
     const parsed=JSON.parse(clean);
     const now=new Date();
     const dateStr=now.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
