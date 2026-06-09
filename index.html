@@ -3,17 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Books by Aurelia Vale: The First 40 Days — a postpartum wellness guide for new mothers (€7.49), The Deeper Story — 50 literary fiction writing prompts (€4.99), and Beneath the Same Sky — a free introduction to Islam.">
-<meta name="keywords" content="postpartum wellness book, new mother guide, first 40 days after birth, literary fiction writing prompts, writing prompts for serious writers, introduction to Islam, interfaith understanding, indie author, ebook download, Aurelia Vale">
+<meta name="description" content="Aurelia Vale — Blogspot. Daily letters on literary fiction and writing craft. For serious writers who want to go deeper.">
+<meta name="keywords" content="how to write literary fiction, literary fiction writing tips, writing prompts, how to start a novel, writing craft, character development, point of view fiction, Aurelia Vale">
 <meta name="author" content="Aurelia Vale">
-<meta property="og:title" content="Aurelia Vale — Literary Fiction & Wellness Books">
-<meta property="og:description" content="The First 40 Days: a postpartum companion for new mothers. The Deeper Story: 50 writing prompts for serious fiction writers. Beneath the Same Sky: a free introduction to Islam.">
-<meta property="og:image" content="https://AureliaVale.github.io/the-first-40-days/cover-40days.jpg">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.aureliavale.work.gd">
 <meta name="robots" content="index, follow">
-<title>Aurelia Vale | Literary Fiction, Wellness & Writing Prompts | AV Collections</title>
-<!-- Google Analytics -->
+<meta property="og:title" content="Aurelia Vale — Blogspot">
+<meta property="og:description" content="Daily letters on literary fiction and writing craft — for serious writers who want to go deeper.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aureliavale.github.io">
+<title>Aurelia Vale — Blogspot</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6VVVZMZMJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -23,272 +21,260 @@
 </script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --gold:#C9A84C;--dark:#1a1a2e;--mid:#16213e;
-  --text:#f0ead6;--muted:#a89880;--accent:#8b7355;
-  --card:rgba(255,255,255,0.05);--border:rgba(255,255,255,0.1)
-}
-body{background:var(--dark);color:var(--text);font-family:'Georgia',serif;min-height:100vh;overflow-x:hidden}
-
-.hero{text-align:center;padding:3.5rem 2rem 1.5rem;position:relative}
-.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:350px;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,0.12),transparent 70%);pointer-events:none}
-.logo{font-size:0.75rem;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin-bottom:0.75rem;font-family:sans-serif}
-.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:400;line-height:1.2;margin-bottom:0.4rem}
-.hero .tagline{font-size:0.95rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem}
-.gold-line{width:50px;height:1px;background:var(--gold);margin:1.25rem auto}
-
-.stats{display:flex;justify-content:center;gap:2.5rem;margin-bottom:2rem;flex-wrap:wrap}
-.stat{text-align:center}
-.stat-num{font-size:1.4rem;color:var(--gold);font-family:sans-serif;font-weight:600}
-.stat-label{font-size:0.7rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;font-family:sans-serif}
-
-.section{max-width:700px;margin:0 auto;padding:0 1.5rem}
-
-.greeting-text{font-size:1rem;line-height:1.85;color:var(--muted);text-align:center;margin-bottom:1.75rem}
-.question-label{font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;text-align:center;margin-bottom:0.875rem;font-family:sans-serif}
-.q-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0.625rem;margin-bottom:1.75rem}
-.q-btn{background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:0.8rem 0.875rem;color:var(--text);cursor:pointer;font-size:0.8rem;line-height:1.4;text-align:left;transition:all 0.2s;font-family:'Georgia',serif}
-.q-btn:hover{border-color:var(--gold);background:rgba(201,168,76,0.08)}
-.q-icon{font-size:1.1rem;display:block;margin-bottom:0.35rem}
-
-.chat-box{background:rgba(255,255,255,0.03);border:0.5px solid var(--border);border-radius:12px;padding:1.25rem;min-height:100px;margin-bottom:0.875rem;display:none}
-.chat-box.visible{display:block}
-.ai-msg{display:flex;gap:0.625rem;margin-bottom:0.875rem}
-.ai-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--accent));display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:#fff;flex-shrink:0;font-family:sans-serif;font-weight:700;letter-spacing:0.05em}
-.ai-bubble{background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.2);border-radius:0 10px 10px 10px;padding:0.8rem 0.95rem;font-size:0.875rem;line-height:1.75;color:var(--text);flex:1}
-.user-msg{display:flex;justify-content:flex-end;margin-bottom:0.875rem}
-.user-bubble{background:rgba(255,255,255,0.06);border-radius:10px 0 10px 10px;padding:0.7rem 0.95rem;font-size:0.875rem;color:var(--muted);max-width:82%;font-style:italic}
-.typing{display:flex;gap:4px;align-items:center;padding:0.3rem 0}
-.dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 1.2s infinite}
-.dot:nth-child(2){animation-delay:0.2s}.dot:nth-child(3){animation-delay:0.4s}
-@keyframes pulse{0%,60%,100%{opacity:0.3}30%{opacity:1}}
-
-.input-row{display:flex;gap:0.5rem;margin-bottom:2.5rem}
-.chat-input{flex:1;background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:0.7rem 0.95rem;color:var(--text);font-size:0.875rem;font-family:'Georgia',serif;outline:none;transition:border-color 0.2s}
-.chat-input::placeholder{color:var(--muted)}
-.chat-input:focus{border-color:var(--gold)}
-.send-btn{background:var(--gold);border:none;border-radius:8px;padding:0.7rem 1.125rem;color:#1a1a2e;cursor:pointer;font-size:0.82rem;font-weight:700;font-family:sans-serif;transition:opacity 0.2s;white-space:nowrap}
-.send-btn:hover{opacity:0.85}
-
-.books-label{font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1.25rem;font-family:sans-serif}
-.book-card{background:var(--card);border:0.5px solid var(--border);border-radius:12px;padding:1.125rem;margin-bottom:0.875rem;display:flex;gap:1rem;transition:border-color 0.2s;text-decoration:none}
-.book-card:hover{border-color:rgba(201,168,76,0.5)}
-.book-cover{width:68px;height:92px;border-radius:4px;object-fit:cover;flex-shrink:0}
-.book-info{flex:1;min-width:0}
-.book-title{font-size:0.975rem;color:var(--text);margin-bottom:0.2rem;line-height:1.3}
-.book-sub{font-size:0.78rem;color:var(--muted);font-style:italic;margin-bottom:0.45rem;line-height:1.4}
-.book-desc{font-size:0.8rem;color:var(--muted);line-height:1.65;margin-bottom:0.7rem}
-.book-footer{display:flex;align-items:center;gap:0.625rem;flex-wrap:wrap}
-.price{font-size:0.875rem;color:var(--gold);font-weight:700;font-family:sans-serif}
-.free-badge{font-size:0.68rem;background:rgba(201,168,76,0.15);color:var(--gold);padding:0.2rem 0.5rem;border-radius:4px;font-family:sans-serif;letter-spacing:0.05em}
-.btn{font-size:0.76rem;padding:0.38rem 0.8rem;border-radius:6px;text-decoration:none;font-family:sans-serif;transition:all 0.2s;cursor:pointer;display:inline-block}
-.btn-buy{background:var(--gold);color:#1a1a2e;border:none;font-weight:700}
-.btn-buy:hover{opacity:0.85}
-.btn-more{background:transparent;color:var(--muted);border:0.5px solid var(--border)}
-.btn-more:hover{border-color:var(--gold);color:var(--gold)}
-.btn-read{background:transparent;color:var(--gold);border:0.5px solid var(--gold)}
-.btn-read:hover{background:rgba(201,168,76,0.1)}
-
-.about-section{border-top:0.5px solid var(--border);padding:2rem 1.5rem;max-width:700px;margin:0 auto}
-.about-section h3{font-size:1rem;font-weight:400;color:var(--text);margin-bottom:0.75rem}
-.about-section p{font-size:0.875rem;color:var(--muted);line-height:1.8}
-
-.newsletter{border-top:0.5px solid var(--border);padding:2rem 1.5rem;max-width:700px;margin:0 auto}
-.newsletter h3{font-size:1rem;font-weight:400;color:var(--text);margin-bottom:0.4rem}
+:root{--gold:#C9A84C;--dark:#1a1a2e;--text:#f0ead6;--muted:#a89880;--accent:#8b7355;--card:rgba(255,255,255,0.05);--border:rgba(255,255,255,0.1)}
+body{background:var(--dark);color:var(--text);font-family:'Georgia',serif;min-height:100vh}
+header{text-align:center;padding:3rem 1.5rem 2rem;position:relative;border-bottom:0.5px solid var(--border)}
+header::before{content:'';position:absolute;top:0;left:0;right:0;height:300px;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,0.1),transparent 70%);pointer-events:none}
+.logo{font-size:0.7rem;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;font-family:sans-serif;margin-bottom:0.75rem}
+h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:400;margin-bottom:0.4rem}
+.tagline{font-size:0.9rem;color:var(--muted);font-style:italic;margin-bottom:1.5rem}
+.gold-line{width:40px;height:1px;background:var(--gold);margin:1.25rem auto}
+.nav-links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+.nav-link{font-size:0.78rem;color:var(--muted);text-decoration:none;font-family:sans-serif;letter-spacing:0.08em;transition:color 0.2s;cursor:pointer;background:none;border:none}
+.nav-link:hover,.nav-link.active{color:var(--gold)}
+.today{max-width:680px;margin:3rem auto;padding:0 1.5rem}
+.today-label{font-size:0.68rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;font-family:sans-serif;margin-bottom:0.5rem}
+.today-date{font-size:0.82rem;color:var(--muted);font-family:sans-serif;margin-bottom:2rem}
+.featured-card{background:rgba(201,168,76,0.06);border:0.5px solid rgba(201,168,76,0.3);border-radius:12px;padding:1.75rem;margin-bottom:1.5rem;cursor:pointer;transition:border-color 0.2s}
+.featured-card:hover{border-color:rgba(201,168,76,0.6)}
+.featured-label{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;font-family:sans-serif;margin-bottom:0.5rem}
+.featured-title{font-size:1.15rem;color:var(--text);margin-bottom:0.5rem;line-height:1.4}
+.featured-excerpt{font-size:0.85rem;color:var(--muted);line-height:1.75}
+.letter{background:var(--card);border:0.5px solid var(--border);border-radius:12px;padding:2rem;margin-bottom:1.5rem;cursor:pointer;transition:border-color 0.2s}
+.letter:hover{border-color:rgba(201,168,76,0.4)}
+.letter-tag{font-size:0.65rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;font-family:sans-serif;margin-bottom:0.75rem}
+.letter-title{font-size:1.2rem;font-weight:400;color:var(--text);margin-bottom:0.75rem;line-height:1.4}
+.letter-excerpt{font-size:0.875rem;color:var(--muted);line-height:1.85}
+.letter-read{display:inline-block;margin-top:1.25rem;font-size:0.78rem;color:var(--gold);font-family:sans-serif;letter-spacing:0.08em}
+.full-post{display:none;max-width:680px;margin:3rem auto;padding:0 1.5rem}
+.full-post.visible{display:block}
+.back-btn{font-size:0.78rem;color:var(--muted);cursor:pointer;margin-bottom:2rem;font-family:sans-serif;border:none;background:none;padding:0;display:block}
+.back-btn:hover{color:var(--gold)}
+.post-tag{font-size:0.65rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;font-family:sans-serif;margin-bottom:0.5rem}
+.post-date{font-size:0.78rem;color:var(--muted);font-family:sans-serif;margin-bottom:1.5rem}
+.post-title{font-size:clamp(1.4rem,4vw,2rem);font-weight:400;color:var(--text);margin-bottom:2rem;line-height:1.3}
+.post-body{font-size:0.95rem;color:var(--muted);line-height:2}
+.post-body p{margin-bottom:1.25rem}
+.post-cta{margin-top:2.5rem;padding-top:1.5rem;border-top:0.5px solid var(--border)}
+.post-cta p{font-size:0.85rem;color:var(--muted);margin-bottom:0.875rem;font-style:italic}
+.cta-btn{display:inline-block;background:var(--gold);color:#1a1a2e;padding:0.6rem 1.25rem;border-radius:6px;font-size:0.82rem;font-weight:700;font-family:sans-serif;text-decoration:none}
+.cta-btn:hover{opacity:0.85}
+.archive-wrap{max-width:680px;margin:3rem auto;padding:0 1.5rem;display:none}
+.archive-wrap.visible{display:block}
+.archive-label{font-size:0.68rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;font-family:sans-serif;margin-bottom:1.5rem}
+.archive-item{padding:1rem 0;border-bottom:0.5px solid var(--border);cursor:pointer;transition:opacity 0.2s}
+.archive-item:hover{opacity:0.8}
+.archive-item:last-child{border-bottom:none}
+.arc-date{font-size:0.7rem;color:var(--muted);font-family:sans-serif;margin-bottom:0.25rem}
+.arc-title{font-size:0.9rem;color:var(--text)}
+.about-wrap{max-width:680px;margin:3rem auto;padding:0 1.5rem;display:none}
+.about-wrap.visible{display:block}
+.about-wrap h2{font-size:1rem;font-weight:400;color:var(--text);margin-bottom:1rem}
+.about-wrap p{font-size:0.875rem;color:var(--muted);line-height:1.85;margin-bottom:0.875rem}
+.newsletter{max-width:680px;margin:0 auto;padding:2rem 1.5rem;border-top:0.5px solid var(--border)}
+.newsletter h2{font-size:1rem;font-weight:400;color:var(--text);margin-bottom:0.5rem}
 .newsletter p{font-size:0.82rem;color:var(--muted);margin-bottom:1rem;line-height:1.6}
-.email-row{display:flex;gap:0.5rem}
-.email-inp{flex:1;background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:0.65rem 0.95rem;color:var(--text);font-size:0.82rem;outline:none;font-family:sans-serif}
-.email-inp:focus{border-color:var(--gold)}
-.email-btn{background:transparent;border:0.5px solid var(--gold);border-radius:8px;padding:0.65rem 1rem;color:var(--gold);cursor:pointer;font-size:0.78rem;font-family:sans-serif;transition:all 0.2s;white-space:nowrap}
-.email-btn:hover{background:rgba(201,168,76,0.1)}
-.email-ok{font-size:0.82rem;color:var(--gold);margin-top:0.625rem;display:none}
-
-footer{text-align:center;padding:1.75rem;border-top:0.5px solid var(--border);font-size:0.72rem;color:var(--muted);font-family:sans-serif}
+.sub-btn{display:inline-block;background:transparent;border:0.5px solid var(--gold);border-radius:8px;padding:0.65rem 1.25rem;color:var(--gold);font-size:0.82rem;font-family:sans-serif;text-decoration:none;transition:all 0.2s}
+.sub-btn:hover{background:rgba(201,168,76,0.1)}
+footer{text-align:center;padding:2rem 1.5rem;border-top:0.5px solid var(--border);font-size:0.72rem;color:var(--muted);font-family:sans-serif}
 footer a{color:var(--gold);text-decoration:none}
-.powered{margin-top:0.5rem;font-size:0.68rem;color:var(--muted)}
-.powered span{color:var(--gold)}
 </style>
 </head>
 <body>
-
-<div class="hero">
+<header>
   <div class="logo">AV Collections</div>
   <h1>Aurelia Vale</h1>
-  <p class="tagline">Where every word is a world</p>
+  <p class="tagline">Blogspot — Literary fiction & writing craft</p>
   <div class="gold-line"></div>
-  <div class="stats">
-    <div class="stat"><div class="stat-num">30</div><div class="stat-label">Years Teaching</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Books Published</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Genres</div></div>
+  <nav class="nav-links">
+    <button class="nav-link active" onclick="showSection('blog',this)">Today's Letter</button>
+    <button class="nav-link" onclick="showSection('archive',this)">Archive</button>
+    <button class="nav-link" onclick="showSection('about',this)">About</button>
+    <a class="nav-link" href="https://aureliavale.work.gd" target="_blank">The Bookshelf →</a>
+  </nav>
+</header>
 
+<div id="blog-section">
+  <div class="today">
+    <div class="today-label">Today's Letter</div>
+    <div class="today-date" id="today-date"></div>
+    <div class="featured-card" onclick="openFeatured()">
+      <div class="featured-label">✦ Featured</div>
+      <div class="featured-title">How Do You Start Writing a Novel? The Question Every Writer Gets Wrong</div>
+      <div class="featured-excerpt">Most writers begin a novel in the wrong place. They begin at the beginning — before they know what the novel is actually about. Not what happens in it. What it is about. The two are not the same thing...</div>
+    </div>
+    <div id="letter-card"></div>
   </div>
 </div>
 
-<div class="section">
-  <p class="greeting-text" id="greeting-text">
-    Welcome. I'm Aurelia's AI guide — here to help you find exactly what you need, whether you're a new mother, a writer, curious about Islam, or simply looking for something meaningful to read.
-  </p>
-  <div class="question-label">What brought you here today?</div>
-  <div class="q-grid">
-    <button class="q-btn" onclick="quickQ('I am a new mother looking for guidance and support after birth')"><span class="q-icon">🤱</span>I'm a new mother</button>
-    <button class="q-btn" onclick="quickQ('I am a writer looking for deep literary fiction writing prompts')"><span class="q-icon">✍️</span>I'm a writer</button>
-    <button class="q-btn" onclick="quickQ('I want to learn about Islam in a gentle, honest way')"><span class="q-icon">📖</span>Curious about Islam</button>
-    <button class="q-btn" onclick="quickQ('I am a teacher or educator looking for professional resources')"><span class="q-icon">🎓</span>I'm an educator</button>
-    <button class="q-btn" onclick="quickQ('I am interested in natural wellness and prophetic health')"><span class="q-icon">🌿</span>Natural wellness</button>
-    <button class="q-btn" onclick="quickQ('Tell me about Aurelia Vale and all her books')"><span class="q-icon">✦</span>Just exploring</button>
-  </div>
+<div class="full-post" id="full-post">
+  <button class="back-btn" onclick="closePost()">← Back to today's letter</button>
+  <div class="post-tag" id="fp-tag"></div>
+  <div class="post-date" id="fp-date"></div>
+  <h2 class="post-title" id="fp-title"></h2>
+  <div class="post-body" id="fp-body"></div>
+  <div class="post-cta" id="fp-cta"></div>
+</div>
 
-  <div class="chat-box" id="chat-box"></div>
-  <div class="input-row">
-    <input class="chat-input" id="chat-input" placeholder="Ask me anything about Aurelia's books…" onkeydown="if(event.key==='Enter')sendMsg()">
-    <button class="send-btn" onclick="sendMsg()">Send →</button>
-  </div>
-
-  <div class="books-label">Books by Aurelia Vale</div>
-
-  <div class="book-card">
-    <img class="book-cover" src="https://AureliaVale.github.io/the-first-40-days/cover-40days.jpg" alt="The First 40 Days cover" onerror="this.style.display='none'">
-    <div class="book-info">
-      <div class="book-title">The First 40 Days</div>
-      <div class="book-sub">A New Mom's Guided Companion</div>
-      <div class="book-desc">A warm, honest, day-by-day companion for new mothers navigating the most tender and overwhelming season of their lives.</div>
-      <div class="book-footer">
-        <span class="price">€7.49</span>
-        <a class="btn btn-buy" href="https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15" target="_blank">Get the book</a>
-        <a class="btn btn-more" href="https://aureliavale.github.io/the-first-40-days/" target="_blank">Learn more</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="book-card">
-    <img class="book-cover" src="https://AureliaVale.github.io/the-deeper-story/cover-deeper-story.jpg" alt="The Deeper Story cover" onerror="this.style.display='none'">
-    <div class="book-info">
-      <div class="book-title">The Deeper Story</div>
-      <div class="book-sub">50 Literary Fiction Writing Prompts for Serious Writers</div>
-      <div class="book-desc">Fifty carefully crafted prompts for writers who want to go beyond the surface — into character, voice, memory, and moral complexity.</div>
-      <div class="book-footer">
-        <span class="price">€4.99</span>
-        <a class="btn btn-buy" href="https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686" target="_blank">Get the book</a>
-        <a class="btn btn-more" href="https://aureliavale.github.io/the-deeper-story/" target="_blank">Learn more</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="book-card">
-    <img class="book-cover" src="https://raw.githubusercontent.com/AureliaVale/AureliaVale/main/beneath.jpg.jpg" alt="Beneath the Same Sky cover" onerror="this.style.display='none'">
-    <div class="book-info">
-      <div class="book-title">Beneath the Same Sky</div>
-      <div class="book-sub">An Invitation to Understanding Islam</div>
-      <div class="book-desc">A quiet, honest introduction to Islam — written for anyone who has ever wondered, without pressure, without argument, and with nothing to prove.</div>
-      <div class="book-footer">
-        <a class="btn btn-read" href="https://books2read.com/u/mZzxAy" target="_blank">Get the book</a>
-        <a class="btn btn-more" href="https://books2read.com/u/mZzxAy" target="_blank">Learn more</a>
-      </div>
-    </div>
+<div class="archive-wrap" id="archive-section">
+  <div style="max-width:680px;margin:0 auto;padding:0 1.5rem">
+    <div class="archive-label">Archive — Published Letters</div>
+    <div id="archive-list"></div>
   </div>
 </div>
 
-<div class="about-section">
-  <h3>About the Author</h3>
-  <p>Aurelia Vale is a retired English teacher and independent author with thirty years of classroom experience. She writes literary fiction, wellness guides, and educational resources — with care, depth, and the quiet conviction that words, when chosen well, can change how a person sees the world.</p>
+<div class="about-wrap" id="about-section">
+  <h2>About Aurelia Vale</h2>
+  <p>Aurelia Vale is a retired English teacher and independent author with thirty years of classroom experience in Algeria. She writes literary fiction and literary nonfiction — with care, depth, and the quiet conviction that words, when chosen well, can change how a person sees the world.</p>
+  <p>She began writing in retirement, drawn by a sense that language — the language she had spent decades teaching — still had things to give her. These letters are part of that giving.</p>
+  <p>Her books are available at <a href="https://aureliavale.work.gd" style="color:var(--gold)">The Bookshelf →</a></p>
 </div>
 
 <div class="newsletter">
-  <h3>Letters from Aurelia</h3>
-  <p>A quiet newsletter for readers who believe every word is a world. No noise — only what matters.</p>
-  <a href="https://aureliav.substack.com" target="_blank" class="btn btn-read" style="display:inline-block;margin-top:0.5rem;padding:0.7rem 1.25rem;font-size:0.875rem">Read Letters from Aurelia →</a>
-  <a href="https://aureliavale.github.io/blog" style="display:inline-block;margin-top:0.5rem;font-size:0.78rem;color:var(--muted);font-family:sans-serif;text-decoration:none;letter-spacing:0.05em" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted)'">✦ From the Desk of Aurelia Vale — Read the blog</a>
+  <h2>Letters from Aurelia</h2>
+  <p>Subscribe on Substack to receive these letters in your inbox — when they arrive, they arrive quietly.</p>
+  <a class="sub-btn" href="https://aureliav.substack.com" target="_blank">Subscribe to Letters from Aurelia →</a>
 </div>
-  © 2026 Aurelia Vale · AV Collections · All rights reserved<br>
-  <a href="https://aureliavale.work.gd">aureliavale.work.gd</a> · <a href="mailto:aureliavale.collections@gmail.com">aureliavale.collections@gmail.com</a>
-  <div class="powered">Guided by <span>Claude AI</span> · Powered by Anthropic</div>
+
+<footer>
+  © 2026 Aurelia Vale · AV Collections<br>
+  <a href="https://aureliavale.work.gd">The Bookshelf</a> · <a href="mailto:aureliavale.collections@gmail.com">aureliavale.collections@gmail.com</a>
 </footer>
 
 <script>
-const SYS = `You are the AI guide on Aurelia Vale's author website. Aurelia Vale is a retired Algerian English teacher with 30 years of experience, now an independent author. She writes with depth, care, faith, and authenticity. Her pen name is Aurelia Vale.
+const FEATURED={
+  title:"How Do You Start Writing a Novel? The Question Every Writer Gets Wrong",
+  meta:"June 2026 · For Writers",
+  body:`Most writers begin a novel in the wrong place.\n\nThey begin at the beginning — chapter one, first sentence, first word — before they know what the novel is actually about. Not what happens in it. What it is about. The two are not the same thing.\n\nA novel can be about a woman returning to her childhood home after her mother's death. That is what happens. What it is about might be something else entirely: the impossibility of forgiveness, perhaps. Or the way we become our parents without noticing. Or the strange loneliness of grief that no one else can see.\n\nUntil you know what your novel is about underneath, you cannot write the surface of it — not really. You can produce pages. You can produce chapters. But they will feel unmoored, as if they could belong to any story, and they will resist the ending because no ending exists for a story that has not yet found its own centre.\n\nSo the answer to "how do I start writing a novel?" is not: open a document and begin typing.\n\nThe answer is: find the question your novel is asking.\n\nNot a plot question — not "will she survive?" or "will they fall in love?" A human question. The kind that has no clean answer, that serious fiction circles without resolving. What do we owe the people we have failed? Can a person change, or do they only become more themselves? What does it cost to tell the truth to someone who cannot bear it?\n\nWhen you know your question, you know your novel. The first sentence will follow.`,
+  cta:"The Deeper Story was written for writers ready to work at this depth — with fifty prompts built around exactly these questions.",
+  url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"
+};
 
-PUBLISHED BOOKS:
-1. "The First 40 Days — A New Mom's Guided Companion" (€7.49, buy: https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15) — A postpartum wellness guide, warm and honest, day-by-day companion for new mothers in the 40 days after birth. Covers physical recovery, emotional wellbeing, newborn care, and self-compassion.
-2. "The Deeper Story — 50 Literary Fiction Writing Prompts for Serious Writers" (€4.99, buy: https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686) — 50 carefully crafted prompts for writers who want to go beyond the surface into character, voice, memory, and moral complexity.
-3. "Beneath the Same Sky — An Invitation to Understanding Islam" (available on all major retailers, get it at: https://books2read.com/u/mZzxAy) — A quiet, honest introduction to Islam for anyone curious, written without pressure or argument. All hadith verified sahih/hasan only.
+const POSTS=[
+{title:"Why Literary Fiction Feels Different — And How to Write It",body:`There is a moment in certain novels when you stop reading about a character and start feeling what they feel. The page disappears. You are no longer a reader — you are inside a life that is not yours, understanding it from the inside.\n\nThat is what literary fiction does at its best. And it is not accidental.\n\nThe difference between genre fiction and literary fiction is not one of quality — both can be excellent. The difference is one of emphasis. Genre fiction tends to prioritise what happens. Literary fiction tends to prioritise what it means.\n\nTo write literary fiction, a writer must be willing to slow down. To stay inside a scene longer than feels comfortable. To let silence and hesitation carry as much weight as action. A character deciding whether to speak — and then not speaking — can be more powerful than any plot event.\n\nThe craft of literary fiction is the craft of paying attention. To how people speak when they are afraid. To what a room looks like when someone has just received terrible news. To the small, specific detail that makes a scene real rather than merely described.`,cta:"The Deeper Story's prompts were built for writers who want to work at exactly that level.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Silence in Fiction",body:`Some of the most powerful moments in literary fiction contain no words at all.\n\nHemingway understood this. His iceberg theory — that the dignity of movement of an iceberg is due to only one-eighth of it being above water — was a theory about silence as much as brevity.\n\nSilence in fiction operates on several levels. There is the silence between characters — the conversation that does not happen, the words that are swallowed. There is the silence within a character — the thought they do not let themselves finish. And there is the silence of the narrative itself — the gap between scenes, the years summarised in a sentence.\n\nThe technique is to make the silence visible without filling it. To let the reader feel the shape of what is absent. This can be done through behaviour — a character who changes the subject every time a particular name comes up. Through environment — a room that is never entered. Through syntax — a sentence that stops before it should.\n\nSilence, handled well, is not emptiness. It is the fullest thing on the page.`,cta:"The Deeper Story includes prompts built specifically around what characters cannot say, and what that costs them.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Character Who Is Morally Complex",body:`The most memorable characters in literary fiction are rarely wholly good or wholly bad. They are something more uncomfortable: recognisably human.\n\nMoral complexity means that a character's inner life contains contradictions that cannot be easily resolved. They want things that conflict with each other. They hold values they do not always live up to. They understand, sometimes, the harm they cause — and proceed anyway.\n\nThe first step is to understand what your character wants, and what that wanting costs others. The second is to resist the urge to judge your character from outside the story. The narrator's job is not to tell the reader how to feel — it is to render the character so completely that the reader feels the full weight of them.\n\nThe third step is to give your character a moment of genuine choice — not between good and evil, but between two goods, or two evils, or a good that costs something real. That choice defines them.`,cta:"The prompts in The Deeper Story were designed specifically to put characters in that territory.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How Memory Works in Literary Fiction",body:`Memory is not the past. It is the past as it lives in the present — filtered, reshaped, sometimes distorted by everything that has happened since.\n\nNeuroscience has established that we do not retrieve memories like files from a drawer — we rebuild them each time we access them. This means that the same event remembered at 20 and at 50 may feel like two entirely different events.\n\nIn fiction, this offers extraordinary possibilities. A character's memory of their childhood is not simply backstory — it is a window into who they have become. The details they remember, the details they have suppressed, the way the memory shifts when something new is discovered — all of this is character.\n\nTo use memory well in fiction, ask: what does this character need to believe about the past? What would it cost them to remember it differently? And what happens when the truth insists on being known?`,cta:"The Deeper Story includes prompts that go directly into this territory — the past that lives inside your characters.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to End a Story: The Art of the Literary Ending",body:`Endings are where many writers fail — not because they cannot write, but because they misunderstand what an ending is for.\n\nA literary ending does not need to tie up every thread or deliver the reader to safety. What it needs to do is feel inevitable, in retrospect, while having been genuinely uncertain in the approach.\n\nThe best literary endings are surprising in the way a truth is surprising — you did not know it until the moment it arrived, and then you understood that it had always been true.\n\nTo write a strong ending, know what your story is actually about underneath. A story about a woman leaving her marriage is, underneath, about something else — freedom, perhaps, or the cost of honesty. The ending must land on that deeper subject. And it must be earned.`,cta:"The Deeper Story includes ten questions to ask your manuscript when the ending is not yet right.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Dialogue That Reveals Character",body:`Amateur dialogue tells you what characters are thinking. Professional dialogue shows you who they are.\n\nThe best dialogue works on at least two levels simultaneously: what is being said, and what is being avoided. A scene where two characters discuss the weather while both are thinking about their dying marriage is not a scene about weather. The weather is the surface. What they cannot say is the scene.\n\nEvery character should have a distinct voice — not just a different vocabulary, but a different relationship to language. One character might speak in long, careful sentences. Another in fragments. A third might use humour as a reflex, deflecting anything emotionally direct.\n\nDialogue also has rhythm. Read it aloud. If it sounds like prose with quotation marks around it, it is not working.`,cta:"The Deeper Story includes prompts built around voice, dialogue, and what characters cannot bring themselves to say.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"Point of View in Fiction: Choosing the Right Narrator",body:`The choice of point of view is one of the most consequential decisions a fiction writer makes — and it is often made too quickly.\n\nFirst person narration creates intimacy and immediacy. The reader is inside a single consciousness, limited by it, close to it. The unreliable narrator is native to this mode.\n\nThird person limited maintains slight distance while retaining intimacy — a slightly wider view without losing closeness to one consciousness.\n\nThird person omniscient allows breadth but risks losing the intimacy contemporary readers often expect.\n\nThe question is not "which point of view is best" but "which serves this particular story?" A story about self-deception belongs in first person. A story about the gap between how we see ourselves and how others see us may need third. The answer is different every time.`,cta:"The Deeper Story includes prompts that require writing from multiple points of view — revealing quickly which perspective a story belongs to.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write About the Past Without Slowing Your Story",body:`Backstory is necessary. Every character has a past that shapes who they are. The question is how to include it without stopping the story's forward motion.\n\nThe most common mistake is the information dump: a pause where the reader is given a chunk of history before being allowed to return to the present. Readers feel these pauses. Tension drains away.\n\nThe better approach is to weave backstory into present action — a character handling an object that belonged to someone they lost, a smell that triggers a memory briefly before the scene continues.\n\nStrategic withholding is one of the most effective tools for creating tension. The reader senses that something happened — and that sense of something unspoken, not yet understood, pulls them forward.`,cta:"The Deeper Story includes prompts designed to make the past present — without stopping the story.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Scene That Stays With the Reader",body:`Some scenes, once read, cannot be forgotten. They become part of a reader's interior life — recalled years later, returning unbidden.\n\nThe first element is specificity. The specific detail — the particular colour of a dress, the sound a door makes, the exact words spoken — gives the mind something to grip. Vague scenes leave nothing to hold.\n\nThe second element is emotional truth. Readers sense the difference between a writer who has understood something and one who is describing what understanding looks like from the outside.\n\nThe third element is consequence. A scene that stays is one where something changes — where the world of the story is different after it than before. And the fourth is restraint. The most powerful scenes are those where the writer trusts the reader.`,cta:"The Deeper Story was built for writers who want to work at this level.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"Why Most Writing Prompts Fail Serious Writers",body:`Most writing prompts are designed for beginners. They ask you to imagine a scenario, introduce a character, describe a setting. Useful — the way training wheels are useful. But at some point, the serious writer needs something harder.\n\nSomething that doesn't just open a door but asks: what is on the other side, and are you brave enough to go there?\n\nLiterary fiction is not about plot. It is about the weight of a moment — the thing a character cannot say, the choice that costs something real, the ending that settles like dust after a long fall.\n\nTo write at that level, a writer needs prompts that work at that level. Not "write a scene where two strangers meet" — but what does your character refuse to remember, and why does that refusal cost them everything? The difference is not style. It is depth.`,cta:"The Deeper Story was written for writers who have outgrown ordinary prompts.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"What Makes a First Sentence Work?",body:`The first sentence of a novel has one job: to make the reader read the second sentence. But in literary fiction, it carries something more — a whole atmosphere, a whole way of seeing, compressed into a few words.\n\nConsider the famous openings that have endured. They share certain qualities: a particular voice, an immediate tension, a world already in motion. They do not explain. They do not introduce. They simply begin, and in beginning, they commit — to a tone, a register, a way of looking at the world that the rest of the novel will have to sustain.\n\nThe first sentence is a promise. Not a promise about what will happen, but about how the story will feel to read. A first sentence that promises wit and delivers solemnity has broken faith with its reader. A first sentence that promises silence and delivers noise has done the same.\n\nWrite your first sentence last. Or write it first, then rewrite it a hundred times. Either way, do not leave it until it is completely, absolutely right.`,cta:"The Deeper Story opens with a prompt that asks you to write a first sentence that carries the weight of everything that follows.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Grief in Fiction",body:`Grief is one of the most written-about experiences in literary fiction, and one of the most frequently written badly.\n\nThe failure usually comes from reaching too quickly for the large emotion — the tears, the collapse, the dramatic outpouring. But grief, in life, is rarely like this. It is more often ordinary. It arrives in supermarkets, at traffic lights, in the middle of a sentence about something completely unrelated. It is disproportionate and then absent and then overwhelming again.\n\nTo write grief well, write the specific, small, unexpected moments. The bereaved character who cannot stop noticing that the dead person will never see this particular thing again — a season, a film, a grandchild. The way grief makes the world look different, as if a filter has been placed over everything.\n\nAnd resist resolution. Grief does not resolve. It becomes part of the texture of a life. A novel that ends with grief "healed" has not told the truth.`,cta:"The Deeper Story includes prompts that take characters into loss — and ask the writer to stay there long enough to find what is true.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"The Difference Between Plot and Story",body:`Plot is what happens. Story is what it means.\n\nThis is not merely a distinction of craft — it is a distinction of intention. A writer who is thinking about plot is asking: what comes next? A writer who is thinking about story is asking: what does this moment cost?\n\nIn commercial fiction, plot tends to drive. In literary fiction, character drives — and plot is what happens when characters, being fully themselves, collide with the world and each other. The events that result are inevitable, given who these people are. They could not have happened otherwise.\n\nThis is why literary fiction can sustain slower pacing, less external action, longer interior passages. The reader is not waiting to find out what happens. The reader is inside the experience of what is happening — and that is a different, and in some ways more demanding, form of engagement.`,cta:"The Deeper Story is structured around story rather than plot — around what moments mean, not just what they are.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Character Who Cannot Change",body:`Not every character in literary fiction changes. Some of the most powerful characters are precisely those who cannot — who are offered the possibility of transformation and refuse it, or who lack the capacity for it, or who change in ways so small they are barely visible.\n\nThe character who cannot change is not a failed character. They are a truthful one. In life, people often do not change. They repeat. They circle back. They make the same mistake in a new setting with a different face.\n\nThe key to writing such a character is to make the reader understand exactly what it would cost them to change — and to make that cost feel real enough that the refusal becomes comprehensible, even sympathetic. We do not need to admire the character. We need to recognise them.\n\nAnd there must be consequences. A character who cannot change must lose something because of it. That loss is the story.`,cta:"The Deeper Story includes prompts specifically about characters who resist change — and what that resistance reveals.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Time in Fiction",body:`Time in fiction is not a clock. It is a lens.\n\nA novel can spend fifty pages on a single afternoon and two sentences on a decade. What determines how time moves in fiction is not chronology but significance — the weight the narrative assigns to each moment.\n\nThe dangerous assumption is that time should move steadily, scene by scene, at roughly the same pace. This produces fiction that feels dutiful but airless. The reader moves through it without surprise, without the sensation of being inside a life rather than a summary of one.\n\nLearn to modulate. Let the narrative linger where the story needs it — inside the charged moment, the conversation that changes everything. Let it accelerate through the stretches of time that are necessary but not alive. And mark the transitions clearly enough that the reader is never disoriented, only moved.`,cta:"The Deeper Story includes prompts that work specifically with time — with the moment before, during, and long after.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Difficult Relationship Between Characters",body:`The most interesting relationships in literary fiction are not the loving ones or the hostile ones. They are the ones that contain both — the ones where love and resentment coexist, where tenderness and cruelty are not opposites but ingredients.\n\nThink of the mother and daughter who cannot speak to each other without hurting each other, and cannot stop speaking. The old friends who have grown into people who would not have chosen each other now, but are bound by the shared history of who they were. The mentor who gave everything and cannot stop collecting the debt.\n\nTo write a difficult relationship, resist the urge to explain it. Do not tell the reader that these two people have a complicated history. Show a scene. Put them in a room. Let the history speak through every word chosen and every word avoided.\n\nThe subtext is the relationship. Everything else is its surface.`,cta:"The Deeper Story includes prompts that put two characters in a room and ask the writer to find what is really being said.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"What Is Voice in Fiction — And How Do You Find Yours?",body:`Voice is the quality in fiction that makes you recognise a writer without seeing their name. It is not style, exactly, though it includes style. It is not tone, though tone is part of it. It is something closer to a sensibility — a particular way of noticing, valuing, and rendering the world.\n\nVoice cannot be manufactured. It can only be discovered — and the discovery comes through writing. A great deal of writing. Writing that is honest rather than impressive, specific rather than general, willing to be strange in the ways that you, specifically, are strange.\n\nThe writers who have found their voice are often the ones who stopped trying to write like someone else. The influence is still there — all writers are shaped by what they have read — but it has been digested rather than imitated. It has become part of something new.\n\nWrite the thing only you could write. That is where your voice lives.`,cta:"The prompts in The Deeper Story are designed to push writers toward their own material — the territory only they can occupy.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Interior Life: What Your Character Is Really Thinking",body:`Interior life — the rendering of a character's inner experience — is where literary fiction lives or dies.\n\nIt is also where many writers go wrong. The most common failure is summary: telling the reader what a character feels rather than rendering the experience of feeling it. "She was sad" is not interior life. It is a report. Interior life is the texture of sadness — what it feels like from inside, in this body, in this moment, with these specific associations.\n\nThe second failure is overcrowding. Interior life should not be constant. A character who is always reflecting, always processing, always articulating their feelings becomes exhausting. The most powerful interior moments arrive in contrast — after a stretch of action or dialogue, a sudden stillness in which the full weight of what has just happened is felt.\n\nAnd interior life must be specific to this character. Their thoughts should sound like no one else's.`,cta:"The Deeper Story's prompts consistently ask: what is your character actually thinking, right now, in this moment?",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Place in Literary Fiction",body:`In literary fiction, place is never merely a setting. It is a character — with history, with atmosphere, with the capacity to act upon the people who inhabit it.\n\nThe writers who use place most powerfully are those who understand that landscape and cityscape carry meaning — that a specific street in a specific city at a specific hour is not interchangeable with any other, and that precision in rendering place creates the kind of reality that makes a reader feel they are there rather than reading about there.\n\nBut place in literary fiction is also always filtered through consciousness. The same street looks different to a woman leaving a funeral and a teenager in love. What a character notices about a place reveals who they are. What they fail to notice reveals it even more.\n\nWrite place from the inside of a particular subjectivity. Let the place be real, and let it be seen.`,cta:"The Deeper Story includes prompts that ask writers to render place as an extension of character — as something felt, not just described.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Scene of Conflict Without Making It Melodramatic",body:`Conflict in literary fiction is rarely the raised voices, the slammed doors, the dramatic confrontation of commercial storytelling. It is more often quiet, compressed, and almost invisible to those outside the scene — which is precisely what makes it devastating.\n\nThe melodramatic scene tells the reader everything: every emotion is named, every wound is displayed, every reaction is large. The literary scene withholds. It gives the reader a conversation about something ordinary — dinner, a journey, a piece of news — while the real conflict runs underneath, never quite surfacing, pressing against the surface from below.\n\nThe key is specificity of behaviour. How does this particular person behave when they are in pain? Some go cold. Some become precise. Some retreat into excessive politeness. These behaviours are more revealing than any outburst — and more true.`,cta:"The Deeper Story includes prompts that put characters in conflict and ask the writer to find the scene beneath the scene.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Revise a Novel: What to Look for and Where to Start",body:`Revision is not correction. It is re-seeing — looking at what you have written as if for the first time, from the outside, as a reader rather than a writer.\n\nThis is why distance matters. The draft that seems perfect on the day you finish it will reveal its problems after six weeks away from it. What felt necessary will look excessive. What felt subtle will be invisible. What felt powerful may remain so.\n\nWhere to start? Not at the beginning. Start with what you know is wrong — the scene you skipped past when writing because you didn't know how to do it yet, the character whose motivation you never quite believed, the ending that doesn't land.\n\nFix the structural problems first. There is no point polishing sentences in a scene that shouldn't exist. The prose-level revision comes last, when the architecture is sound.`,cta:"The Story Audit in The Deeper Story offers ten questions to ask your manuscript when something is wrong but you can't name it.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Secondary Character Who Feels Real",body:`Secondary characters fail in two opposite directions: they are either too thin — present only to serve the plot, with no inner life of their own — or too thick, so fully developed that they overwhelm the story they are supposed to support.\n\nThe key is selective depth. A secondary character does not need a complete backstory. They need one or two specific qualities that make them feel like a person — a particular way of speaking, a habit, a contradiction between what they say and what they do.\n\nAnd they need their own agenda. Even a character who appears in three scenes should want something, even if what they want is small and never quite achieved. Characters without desires are furniture.\n\nThe test of a well-written secondary character is whether the reader wonders, briefly, what their life looks like when they are not in this scene.`,cta:"The Deeper Story includes prompts that specifically develop secondary characters — the ones who populate the margins of the world.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write Ambiguity in Fiction",body:`Literary fiction is, at its best, comfortable with ambiguity — with leaving questions unanswered, with presenting evidence and withholding verdicts, with trusting the reader to sit with uncertainty.\n\nThis is not the same as being unclear or evasive. Ambiguity in fiction is deliberate and precise. The writer knows exactly what they are withholding and why. The reader senses that something is being withheld — and that the withholding is meaningful.\n\nThe most common form of ambiguity in literary fiction is moral: a character who does something that is neither clearly right nor clearly wrong, whose motives are mixed, whose consequences are unpredictable. The story presents this without judgment. The reader is left to judge — or to decide that judgment is not the point.\n\nAmbiguity requires more craft than resolution. A resolved ending is easy. An ending that leaves the reader in a larger space than they entered is the real achievement.`,cta:"The Deeper Story includes prompts that resist easy resolution — that ask writers to hold the question open.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write About Family in Literary Fiction",body:`Family is the oldest subject of literary fiction, and the most inexhaustible. Because no relationship is as formative, as complicated, or as difficult to see clearly from the inside.\n\nThe challenge of writing family is not finding the material — everyone has it. The challenge is finding the distance to write it truthfully. Too close, and the writing becomes complaint or tribute, unable to see the people involved as the contradictory, fallible, deeply human figures they are. Too far, and the emotional truth drains away.\n\nThe best fiction about family is specific. Not "a difficult mother" but this mother, with this particular combination of love and damage, in this particular house, in this particular year. Specificity is what transforms the personal into the universal — paradoxically, the more particular a family portrait is, the more readers will recognise themselves in it.`,cta:"The Deeper Story includes prompts that return writers to the first relationships — the ones that shaped everything.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"What Does Show Don't Tell Actually Mean?",body:`"Show don't tell" is the most repeated piece of writing advice and the most frequently misunderstood.\n\nIt does not mean never tell. Telling is essential — it allows narrative to move through time, to summarise, to compress. A novel written entirely in scenes would be unreadable. The advice means: do not tell where showing would be more powerful. Do not name an emotion where the reader could feel it. Do not explain a character's motivation where their behaviour could demonstrate it.\n\n"She was angry" is telling. The description of what anger looks like in this specific person — the particular stillness, the controlled voice, the way they begin to clean things — is showing. The showing is more powerful because it is particular. It could only be this person, in this moment, feeling this.\n\nTell the things that need to be told. Show the things that matter.`,cta:"The Deeper Story's prompts consistently ask writers to find the specific, embodied truth of a moment rather than its summary.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Narrator You Cannot Fully Trust",body:`The unreliable narrator is one of the most powerful tools in literary fiction — and one of the most easily misused.\n\nUnreliability works when it is systematic and meaningful. A narrator who lies or distorts for reasons rooted in their character — self-protection, self-deception, the inability to bear a particular truth — creates dramatic irony that gives the reader a richer experience than the narrator's words alone.\n\nThe reader begins to read on two levels: what the narrator says, and what the gap between the narrator's account and reality reveals. This gap is where the real story lives.\n\nThe key is that the unreliability must be discoverable. The reader must be able to sense it — in inconsistencies, in telling omissions, in the quality of the narrator's attention to certain subjects and avoidance of others. A reader who feels cheated at the end has been given a twist. A reader who feels illuminated has been given a novel.`,cta:"The Deeper Story includes prompts that work specifically with narrators whose relationship to truth is complicated.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write the Body in Literary Fiction",body:`Literary fiction often lives in the mind — in thought, memory, perception, reflection. But the body is always present, even when the narrative ignores it. And when fiction ignores the body entirely, it loses something essential: the sense that these characters are physical, mortal, embedded in the material world.\n\nThe body in literary fiction is not description for its own sake. It is the site where experience registers — where grief is felt as weight, where anxiety is felt as constriction, where joy arrives as something almost physical. Characters who are only minds are not fully human.\n\nWrite the body's ordinary experience: cold, hunger, the specific quality of tiredness at the end of a particular kind of day. And write the body's extraordinary moments — illness, desire, pain — with the same specificity, resisting the tendency to either sentimentalise or sensationalise.\n\nThe body is where the story is finally real.`,cta:"The Deeper Story includes prompts that ask writers to return their characters to the body — to the physical reality of experience.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Write a Character Facing an Impossible Choice",body:`The impossible choice — where every option costs something real, where there is no clean way through — is the engine of the best literary fiction.\n\nWhat makes a choice truly impossible is not that the options are equally good, but that they are equally necessary. The character must choose between two things they cannot bear to lose, or between two loyalties that cannot both be honoured, or between the truth and the person they love.\n\nThe writer's job is to make both sides of the choice feel real to the reader. If one option is clearly right, the choice is not impossible — it is merely difficult. The reader must feel the weight of what is sacrificed in any direction.\n\nAnd then the character must choose. Not a compromise. Not an evasion. A choice, with consequences that cannot be undone. That moment — the moment of choosing — is where character is revealed most completely.`,cta:"The Deeper Story includes prompts built specifically around this territory: the choice that costs everything.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"},
+{title:"How to Read Like a Writer",body:`Reading like a writer is a different activity from reading like a reader. A reader asks: what happens next? A writer asks: how is this done?\n\nThis means slowing down. Stopping at the passages that affect you most strongly and asking not just what they made you feel, but how they made you feel it. What specific choices — of word, of sentence length, of what is included and what is left out — created that effect?\n\nIt also means reading widely and against your preferences. The writers who will teach you the most are not always the ones you enjoy most. Sometimes the writer who does something you dislike is teaching you, precisely through your dislike, what you do not want to do.\n\nKeep a notebook for this. Not for plot summaries or character names. For the sentences that stopped you. For the moments you understood, for the first time, how a particular thing could be done.`,cta:"The Reading List in The Deeper Story recommends ten novels that go all the way — chosen specifically to teach the writer who reads them.",url:"https://av-edu-lab.lemonsqueezy.com/checkout/buy/bced256c-ead4-475c-a1da-94a3c3b92686"}
+];
 
-CONTACT: For any inquiry, readers can email aureliavale.collections@gmail.com
+const START=new Date(2026,5,8);
 
-COMING SOON: The MIRA Trilogy — Book 1 "The First Life" (literary fiction, launching 2026), The Teacher You Haven't Become (for educators), Prophetic Wellness Trilogy (natural health grounded in Islamic tradition), Still Thriving series (for widows). All available via Draft2Digital and Lemon Squeezy — NOT on Amazon/KDP.
-
-ABOUT AURELIA: Grandmother, lover of language, faith, and wellness. 30 years in Algerian classrooms. Writes from the heart. Believes words, when chosen well, change how a person sees the world.
-
-YOUR ROLE: Warmly guide each visitor to the right book based on who they are. Be personal, warm, literary in tone. Keep responses under 130 words. Always end by pointing to the most relevant book with its link, or asking one meaningful follow-up question. Never be pushy. Speak like a wise caring friend who knows books deeply. When mentioning a book link, format it naturally in the text.`;
-
-let hist=[], msgN=0;
-
-function box(){return document.getElementById('chat-box')}
-
-function addUser(t){
-  box().classList.add('visible');
-  const d=document.createElement('div');
-  d.className='user-msg';
-  d.innerHTML=`<div class="user-bubble">${t}</div>`;
-  box().appendChild(d);
-  box().scrollTop=9999;
+function daysSinceStart(){
+  const now=new Date();
+  now.setHours(0,0,0,0);
+  return Math.floor((now-START)/(1000*60*60*24));
 }
 
-function addAI(t){
-  const d=document.createElement('div');
-  d.className='ai-msg';
-  const id='m'+msgN++;
-  d.innerHTML=`<div class="ai-avatar">AV</div><div class="ai-bubble" id="${id}"></div>`;
-  box().appendChild(d);
-  document.getElementById(id).innerHTML=t.replace(/\n/g,'<br>');
-  box().scrollTop=9999;
+function getPostIndex(){
+  const d=daysSinceStart();
+  return((d%POSTS.length)+POSTS.length)%POSTS.length;
 }
 
-function showTyping(){
-  box().classList.add('visible');
-  const d=document.createElement('div');
-  d.className='ai-msg';d.id='typ';
-  d.innerHTML=`<div class="ai-avatar">AV</div><div class="ai-bubble"><div class="typing"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>`;
-  box().appendChild(d);box().scrollTop=9999;
+function getDateStr(d){
+  const date=new Date(START);
+  date.setDate(date.getDate()+d);
+  return date.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
 }
 
-function hideTyping(){const t=document.getElementById('typ');if(t)t.remove();}
-
-async function ask(msg){
-  hist.push({role:'user',content:msg});
-  addUser(msg);showTyping();
-  try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:SYS,messages:hist})
-    });
-    const d=await r.json();
-    const rep=d.content?.[0]?.text||"I'd love to help — what kind of book are you looking for?";
-    hist.push({role:'assistant',content:rep});
-    hideTyping();addAI(rep);
-  }catch(e){hideTyping();addAI("Something went quietly wrong. Please try again in a moment.");}
+function showSection(s,el){
+  document.getElementById('blog-section').style.display=s==='blog'?'block':'none';
+  document.getElementById('full-post').classList.remove('visible');
+  document.getElementById('archive-section').classList.toggle('visible',s==='archive');
+  document.getElementById('about-section').classList.toggle('visible',s==='about');
+  document.querySelectorAll('.nav-link').forEach(l=>l.classList.remove('active'));
+  if(el)el.classList.add('active');
+  window.scrollTo(0,0);
 }
 
-function quickQ(q){
-  document.getElementById('greeting-text').style.display='none';
-  ask(q);
+function openFeatured(){
+  document.getElementById('fp-tag').textContent='For Writers';
+  document.getElementById('fp-date').textContent='Featured';
+  document.getElementById('fp-title').textContent=FEATURED.title;
+  document.getElementById('fp-body').innerHTML=FEATURED.body.split('\n\n').map(p=>`<p>${p}</p>`).join('');
+  document.getElementById('fp-cta').innerHTML=`<p>${FEATURED.cta}</p><a class="cta-btn" href="${FEATURED.url}" target="_blank">Get the book →</a>`;
+  document.getElementById('blog-section').style.display='none';
+  document.getElementById('full-post').classList.add('visible');
+  window.scrollTo(0,0);
 }
 
-function sendMsg(){
-  const i=document.getElementById('chat-input');
-  const v=i.value.trim();if(!v)return;
-  i.value='';
-  document.getElementById('greeting-text').style.display='none';
-  ask(v);
+function openPost(idx){
+  const p=POSTS[idx];
+  document.getElementById('fp-tag').textContent='For Writers';
+  document.getElementById('fp-date').textContent=getDateStr(idx);
+  document.getElementById('fp-title').textContent=p.title;
+  document.getElementById('fp-body').innerHTML=p.body.split('\n\n').map(para=>`<p>${para}</p>`).join('');
+  document.getElementById('fp-cta').innerHTML=`<p>${p.cta}</p><a class="cta-btn" href="${p.url}" target="_blank">Get the book →</a>`;
+  document.getElementById('blog-section').style.display='none';
+  document.getElementById('full-post').classList.add('visible');
+  window.scrollTo(0,0);
 }
 
-function subscribe(){
-  const e=document.getElementById('email-inp').value.trim();
-  if(!e||!e.includes('@'))return;
-  document.getElementById('email-ok').style.display='block';
-  document.getElementById('email-inp').value='';
-  window.open('https://b7691635.sibforms.com/serve/MUIFAF8FZ_XJ8f7-kqRl4IEV224SXxUrzvVcfjHXDZGwWLKUHzyW5HItDsw7aOMrnjcIZqwOOX0uzu1wwN9icjC47R1uaVMj0-y3Py6FMR1fiT22d7SAQ7BLcrWa2j1MCAZj3E85nrttQcNXWKCzTcFkuu7ILseLwoiN8vXXNYfUbsHt89ynM8DlGxlGpVPPWnBThm2yTf7LJZb_iQ==?EMAIL='+encodeURIComponent(e),'_blank');
+function closePost(){
+  document.getElementById('full-post').classList.remove('visible');
+  document.getElementById('blog-section').style.display='block';
+  window.scrollTo(0,0);
 }
+
+function renderToday(){
+  const idx=getPostIndex();
+  const days=daysSinceStart();
+  document.getElementById('today-date').textContent=getDateStr(days);
+  const p=POSTS[idx];
+  document.getElementById('letter-card').innerHTML=`
+    <div class="letter" onclick="openPost(${idx})">
+      <div class="letter-tag">For Writers</div>
+      <div class="letter-title">${p.title}</div>
+      <div class="letter-excerpt">${p.body.split('\n\n')[0].substring(0,200)}…</div>
+      <span class="letter-read">Read this letter →</span>
+    </div>`;
+}
+
+function renderArchive(){
+  const days=daysSinceStart();
+  const list=document.getElementById('archive-list');
+  // Only show posts up to today
+  const published=[];
+  for(let i=0;i<=days&&i<POSTS.length;i++){
+    published.push(i);
+  }
+  if(published.length===0){
+    list.innerHTML='<p style="color:var(--muted);font-size:0.85rem">No archived letters yet.</p>';
+    return;
+  }
+  list.innerHTML=published.reverse().map(i=>`
+    <div class="archive-item" onclick="openPost(${i%POSTS.length})">
+      <div class="arc-date">${getDateStr(i)}</div>
+      <div class="arc-title">${POSTS[i%POSTS.length].title}</div>
+    </div>`).join('');
+}
+
+renderToday();
+renderArchive();
 </script>
 </body>
 </html>
