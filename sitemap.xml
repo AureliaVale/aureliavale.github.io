@@ -1,177 +1,194 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://aureliavale.github.io/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/beneath-the-same-sky/</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/keyword-guide/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/content-brief/</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-memory-works-in-literary-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-end-a-story.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-read-like-a-writer.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-revise-a-novel.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-a-character-who-cannot-change.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-a-difficult-relationship.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-a-morally-complex-character.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-a-scene-that-stays-with-the-reader.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-a-secondary-character.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-about-family-in-literary-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-about-the-past-without-slowing-your-story.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-ambiguity-in-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-conflict-without-melodrama.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-dialogue-that-reveals-character.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-grief-in-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-interior-life.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-place-in-literary-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-silence-in-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/how-to-write-time-in-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/point-of-view-in-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/the-difference-between-plot-and-story.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/what-does-show-dont-tell-actually-mean.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/what-is-voice-in-fiction.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/what-makes-a-first-sentence-work.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aureliavale.github.io/letters/why-most-writing-prompts-fail-serious-writers.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+<loc>https://aureliavale.github.io/</loc>
+<lastmod>2026-06-21</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/the-deeper-story/</loc>
+<lastmod>2026-06-21</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/the-first-40-days/</loc>
+<lastmod>2026-06-21</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/beneath-the-same-sky/</loc>
+<lastmod>2026-06-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/avedutools/</loc>
+<lastmod>2026-06-21</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/keyword-guide/</loc>
+<lastmod>2026-06-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/content-brief/</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-memory-works-in-literary-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-end-a-story.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-read-like-a-writer.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-revise-a-novel.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-a-character-who-cannot-change.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-a-difficult-relationship.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-a-morally-complex-character.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-a-scene-that-stays-with-the-reader.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-a-secondary-character.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-about-family-in-literary-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-about-the-past-without-slowing-your-story.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-ambiguity-in-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-conflict-without-melodrama.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-dialogue-that-reveals-character.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-grief-in-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-interior-life.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-place-in-literary-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-silence-in-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/how-to-write-time-in-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/point-of-view-in-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/the-difference-between-plot-and-story.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/what-does-show-dont-tell-actually-mean.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/what-is-voice-in-fiction.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/what-makes-a-first-sentence-work.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://aureliavale.github.io/letters/why-most-writing-prompts-fail-serious-writers.html</loc>
+<lastmod>2026-06-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
 </urlset>
