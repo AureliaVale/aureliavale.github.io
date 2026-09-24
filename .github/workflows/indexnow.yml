@@ -1,0 +1,24 @@
+name: IndexNow ping
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'feed.xml', 'sitemap.xml']
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Submit changed pages
+        run: |
+          HOST="aureliavale.github.io"
+          KEY="k7m2q9x4v1b8n3zt"
+          sleep 90
+          URLS=$(git diff --name-only HEAD~1 HEAD -- '*.html' \
+            | sed "s#^#https://$HOST/#; s#index\.html\$##" \
+            | jq -R . | jq -s .)
+          if [ "$URLS" = "[]" ]; then echo "No pages changed"; exit 0; fi
+          curl -s -w "\nHTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"$HOST\",\"key\":\"$KEY\",\"keyLocation\":\"https://$HOST/$KEY.txt\",\"urlList\":$URLS}"
